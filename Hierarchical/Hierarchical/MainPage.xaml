@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hierarchical.MainPage"
+             Title="Example comparing Simple vs MVVM design">
+
+    <StackLayout Spacing="50">
+        <Frame BorderColor="Black">
+            <StackLayout VerticalOptions="Start">
+                <Label Text="Select what MainPage to start from" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+        </Frame>
+        <Frame BorderColor="Black" BackgroundColor="LightYellow">
+            <StackLayout VerticalOptions="End">
+                <Button Text="Simple" Clicked="Button_Clicked_Simple" />
+                <Button Text="MVVM" Clicked="Button_Clicked_MVVM" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

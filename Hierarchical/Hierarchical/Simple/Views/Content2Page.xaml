@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hierarchical.Simple.Views.Content2Page"
+             Title="Simple Content2Page"
+             Padding="20">
+    <ContentPage.Content>
+        <StackLayout Spacing="50">
+            <StackLayout VerticalOptions="Start">
+                <Label Text="Content2Page" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <Frame BorderColor="Black" BackgroundColor="LightGreen">
+                <StackLayout VerticalOptions="End">
+                    <Label Text="{Binding CurrentGeoLocation.Latitude, StringFormat='Latitude: {0}'}" />
+                    <Label Text="{Binding CurrentGeoLocation.Longitude, StringFormat='Longitude: {0}'}" />
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="LightYellow">
+                <StackLayout VerticalOptions="End">
+                    <Button Text="Next" Clicked="Button_Clicked_Next" />
+                    <Button Text="Back" Clicked="Button_Clicked_Back" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

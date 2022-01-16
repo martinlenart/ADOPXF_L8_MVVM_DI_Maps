@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hierarchical.MVVM.Views.MainPage"
+             Title="MVVM Example">
+
+    <StackLayout Spacing="50">
+        <Frame BorderColor="Black">
+            <StackLayout VerticalOptions="Start">
+                <Label Text="MainPage" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+        </Frame>
+        <Frame BorderColor="Black" BackgroundColor="LightYellow">
+            <StackLayout VerticalOptions="End">
+                <Button Text="Go to Page1" Command="{Binding GoToPage1}" />
+                <Button Text="Go to Page2" Command="{Binding GoToPage2}" />
+                <Button Text="Go to Page3" Command="{Binding GoToPage3}" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
